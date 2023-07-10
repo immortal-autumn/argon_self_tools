@@ -90,8 +90,8 @@ $ # OR with PostgreSQL connector
 $ # pip install -r requirements-pgsql.txt
 $
 $ # Set the FLASK_APP environment variable
-$ (Unix/Mac) export FLASK_APP=run.py
-$ (Windows) set FLASK_APP=run.py
+$ (Unix/Mac) export FLASK_APP=app.py
+$ (Windows) set FLASK_APP=app.py
 $ (Powershell) $env:FLASK_APP = ".\run.py"
 $
 $ # Set up the DEBUG environment
@@ -169,7 +169,7 @@ Within the download you'll find the following directories and files:
    |    |-- appseed-app.conf                # Deployment 
    |
    |-- .env                                 # Inject Configuration via Environment
-   |-- run.py                               # Start the app - WSGI gateway
+   |-- app.py                               # Start the app - WSGI gateway
    |
    |-- ************************************************************************
 ```
