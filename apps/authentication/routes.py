@@ -56,6 +56,8 @@ def login():
 
 @blueprint.route('/register', methods=['GET', 'POST'])
 def register():
+    # Register not allowed at this moment.
+    return render_template('home/page-404.html'), 404
     create_account_form = CreateAccountForm(request.form)
     if 'register' in request.form:
 
